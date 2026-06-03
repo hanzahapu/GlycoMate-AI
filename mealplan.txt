@@ -1,0 +1,41 @@
+Evaluate the following user profile and decide if a meal plan can be generated or if more info is needed.
+
+USER PROFILE:
+- Age: {age}
+- Sex: {sex}
+- Diabetes Type: {diabetes_type}
+- Activity Level: {activity_level}
+- Dietary Preference: {dietary_pref}
+- Allergies: {allergies}
+- Budget: {budget}
+- Cooking Access: {cooking_access}
+- Dislikes: {dislikes}
+- Wants Sri Lankan Only: {wants_sri_lankan_only}
+
+If MISSING required fields:
+Set state="need_info" and ask questions.
+
+If ALL required fields are present:
+Set state="ready" and generate the 1-day meal plan.
+
+Format the output as raw text followed by the JSON block.
+Example JSON for state="need_info":
+```json
+{{
+  "state": "need_info",
+  "missing_fields": ["age", "diabetes_type"],
+  "questions": ["How old are you?", "What type of diabetes do you have?"],
+  "quick_replies": {{"diabetes_type": ["Type 1", "Type 2", "Gestational", "Not sure"]}}
+}}
+```
+
+Example JSON for state="ready":
+```json
+{{
+  "state": "ready",
+  "meta": {{
+    "daily_target_kcal": 2000,
+    "meals": [...]
+  }}
+}}
+```

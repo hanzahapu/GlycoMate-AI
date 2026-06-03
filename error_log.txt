@@ -1,0 +1,165 @@
+RAW LLM CONTENT: Hello! How can I assist you today?
+DEBUG CHAT RESULT: {'state': 'chat', 'response': 'Hello! How can I assist you today?', 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Hello Thusheera! To provide you with a personalized meal plan, I need some essential information from you. Could you please share the following details:
+1. Your age
+2. Your gender
+3. Your diabetes type
+4. Your dietary preferences (e.g., vegetarian, non-vegetarian)
+5. Any allergies you have
+
+Once I have this information, I'll be able to create a customized meal plan for you.
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': "Hello Thusheera! To provide you with a personalized meal plan, I need some essential information from you. Could you please share the following details:\n1. Your age\n2. Your gender\n3. Your diabetes type\n4. Your dietary preferences (e.g., vegetarian, non-vegetarian)\n5. Any allergies you have\n\nOnce I have this information, I'll be able to create a customized meal plan for you.", 'missing_fields': ['age', 'gender', 'diabetes info', 'dietary preference', 'allergies'], 'questions': ['Please provide your age.', 'Please provide your gender.', 'Please provide your diabetes info.', 'Please provide your dietary preference.', 'Please provide your allergies.'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great! Thank you for providing your details. Let's create a personalized meal plan for you.
+
+```json
+{
+  "state": "ready",
+  "missing_fields": [],
+  "questions": [],
+  "quick_replies": {},
+  "meta": {}
+}
+```
+DEBUG CHAT RESULT: {'state': 'ready', 'response': "Great! Thank you for providing your details. Let's create a personalized meal plan for you.", 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Here is a personalized meal plan for you, Thusheera:
+
+**Breakfast:**
+- Whole-grain bread
+- Boiled egg
+- Sugar-free tea
+
+**Lunch:**
+- Red rice
+- Fish curry (ambul thiyal)
+- Pumpkin curry
+- Leafy mallum
+
+**Snack:**
+- Guava
+- A handful of unsalted nuts
+
+**Dinner:**
+- String hoppers
+- Dhal curry
+- Sauteed greens
+
+Enjoy your meals! If you need more assistance or have any other requests, feel free to let me know.
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': 'Here is a personalized meal plan for you, Thusheera:\n\n**Breakfast:**\n- Whole-grain bread\n- Boiled egg\n- Sugar-free tea\n\n**Lunch:**\n- Red rice\n- Fish curry (ambul thiyal)\n- Pumpkin curry\n- Leafy mallum\n\n**Snack:**\n- Guava\n- A handful of unsalted nuts\n\n**Dinner:**\n- String hoppers\n- Dhal curry\n- Sauteed greens\n\nEnjoy your meals! If you need more assistance or have any other requests, feel free to let me know.', 'missing_fields': ['age', 'gender', 'diabetes info', 'dietary preference', 'allergies'], 'questions': ['Please provide your age.', 'Please provide your gender.', 'Please provide your diabetes info.', 'Please provide your dietary preference.', 'Please provide your allergies.'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Hello Sanuth! Great to have you here. To create a personalized meal plan, I need a bit more information. Could you please share your diabetes type, any dietary preferences, and if you have any allergies?
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': 'Hello Sanuth! Great to have you here. To create a personalized meal plan, I need a bit more information. Could you please share your diabetes type, any dietary preferences, and if you have any allergies?', 'missing_fields': ['age', 'gender', 'diabetes info', 'dietary preference', 'allergies'], 'questions': ['Please provide your age.', 'Please provide your gender.', 'Please provide your diabetes info.', 'Please provide your dietary preference.', 'Please provide your allergies.'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great, Sanuth! Thank you for providing your diabetes type. Could you also share if you have any specific dietary preferences or allergies? This will help me tailor the meal plan to suit your needs.
+DEBUG CHAT RESULT: {'state': 'chat', 'response': 'Great, Sanuth! Thank you for providing your diabetes type. Could you also share if you have any specific dietary preferences or allergies? This will help me tailor the meal plan to suit your needs.', 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Hello Sanuth! Thank you for sharing your details. Based on your profile as a 25-year-old male with type 2 diabetes and no allergies, here is a personalized meal plan for breakfast and dinner:
+
+**Breakfast:**
+- Whole-grain bread
+- Boiled egg
+- Sugar-free tea
+
+**Dinner:**
+- Red rice
+- Fish curry (ambul thiyal)
+- Pumpkin curry
+- Leafy mallum
+
+Enjoy your meals! If you need more assistance or have any other preferences, feel free to let me know.
+DEBUG CHAT RESULT: {'state': 'chat', 'response': 'Hello Sanuth! Thank you for sharing your details. Based on your profile as a 25-year-old male with type 2 diabetes and no allergies, here is a personalized meal plan for breakfast and dinner:\n\n**Breakfast:**\n- Whole-grain bread\n- Boiled egg\n- Sugar-free tea\n\n**Dinner:**\n- Red rice\n- Fish curry (ambul thiyal)\n- Pumpkin curry\n- Leafy mallum\n\nEnjoy your meals! If you need more assistance or have any other preferences, feel free to let me know.', 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great choice! For a vegetarian breakfast with low carbs, I recommend trying Kurakkan porridge with peanuts and a small banana. This will provide you with a nutritious and filling meal while keeping the carb content low.
+
+Here are a couple of Sri Lankan substitutions you can consider:
+1. Instead of peanuts, you can try adding chopped cashew nuts for a different flavor.
+2. If you prefer a different fruit, you can replace the banana with a small serving of papaya for a tropical twist.
+
+Now, let's proceed with the required details to generate a personalized meal plan for you. 
+
+```json
+{
+  "state": "need_info",
+  "missing_fields": ["diabetes info", "dietary preference", "allergies"],
+  "questions": ["Could you please provide your diabetes type?", "Do you have any specific dietary preferences?", "Do you have any food allergies?"],
+  "quick_replies": {},
+  "meta": {}
+}
+```
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': "Great choice! For a vegetarian breakfast with low carbs, I recommend trying Kurakkan porridge with peanuts and a small banana. This will provide you with a nutritious and filling meal while keeping the carb content low.\n\nHere are a couple of Sri Lankan substitutions you can consider:\n1. Instead of peanuts, you can try adding chopped cashew nuts for a different flavor.\n2. If you prefer a different fruit, you can replace the banana with a small serving of papaya for a tropical twist.\n\nNow, let's proceed with the required details to generate a personalized meal plan for you.", 'missing_fields': ['diabetes info', 'dietary preference', 'allergies'], 'questions': ['Could you please provide your diabetes type?', 'Do you have any specific dietary preferences?', 'Do you have any food allergies?'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great! Thank you for providing your details. Just to clarify, are you looking for a non-vegetarian lunch option with moderate calories for your meal plan? 
+
+Please also let me know if you have any specific dietary preferences or allergies that I should consider.
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': 'Great! Thank you for providing your details. Just to clarify, are you looking for a non-vegetarian lunch option with moderate calories for your meal plan? \n\nPlease also let me know if you have any specific dietary preferences or allergies that I should consider.', 'missing_fields': ['age', 'gender', 'diabetes info', 'dietary preference', 'allergies'], 'questions': ['Please provide your age.', 'Please provide your gender.', 'Please provide your diabetes info.', 'Please provide your dietary preference.', 'Please provide your allergies.'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Got it! Since you're not looking for a meal plan, I'll provide you with some general information. Feel free to ask any questions or let me know how I can assist you further.
+
+```json
+{
+  "state": "chat",
+  "missing_fields": [],
+  "questions": [],
+  "quick_replies": {},
+  "meta": {}
+}
+```
+DEBUG CHAT RESULT: {'state': 'chat', 'response': "Got it! Since you're not looking for a meal plan, I'll provide you with some general information. Feel free to ask any questions or let me know how I can assist you further.", 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: For diabetic-friendly Sri Lankan snacks, you can consider options like boiled kadala (gram), unsalted nuts, guava, vegetable soup, and roasted gram. These snacks are nutritious and suitable for managing blood sugar levels.
+
+```json
+{
+  "state": "chat",
+  "missing_fields": [],
+  "questions": [],
+  "quick_replies": {},
+  "meta": {}
+}
+```
+DEBUG CHAT RESULT: {'state': 'chat', 'response': 'For diabetic-friendly Sri Lankan snacks, you can consider options like boiled kadala (gram), unsalted nuts, guava, vegetable soup, and roasted gram. These snacks are nutritious and suitable for managing blood sugar levels.', 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Hello! How can I assist you today? If you're looking for personalized diabetes meal recommendations, please provide me with the following details: your age, gender, meal scope (breakfast, lunch, dinner, or snack), dietary preferences, type of diabetes, and any allergies you have.
+DEBUG CHAT RESULT: {'state': 'chat', 'response': "Hello! How can I assist you today? If you're looking for personalized diabetes meal recommendations, please provide me with the following details: your age, gender, meal scope (breakfast, lunch, dinner, or snack), dietary preferences, type of diabetes, and any allergies you have.", 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great to meet you, Hansaja! To create a personalized diabetes-friendly meal plan for you, I need a bit more information. Could you please let me know your activity level (sedentary, light activity, moderate activity, or active) and if you have any specific dislikes or preferences in your diet?
+DEBUG CHAT RESULT: {'state': 'need_info', 'response': 'Great to meet you, Hansaja! To create a personalized diabetes-friendly meal plan for you, I need a bit more information. Could you please let me know your activity level (sedentary, light activity, moderate activity, or active) and if you have any specific dislikes or preferences in your diet?', 'missing_fields': ['age', 'gender', 'diabetes info', 'dietary preference', 'allergies'], 'questions': ['Please provide your age.', 'Please provide your gender.', 'Please provide your diabetes info.', 'Please provide your dietary preference.', 'Please provide your allergies.'], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Thanks for sharing that, Hansaja! I'll now generate a personalized diabetes-friendly meal plan for you based on your details. Just a moment, please.
+DEBUG CHAT RESULT: {'state': 'chat', 'response': "Thanks for sharing that, Hansaja! I'll now generate a personalized diabetes-friendly meal plan for you based on your details. Just a moment, please.", 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
+RAW LLM CONTENT: Great! Here is your personalized diabetes-friendly meal plan for a full day:
+
+**Breakfast:**
+- Kurakkan (ragi) porridge with peanuts
+- Papaya
+- Herbal tea (no sugar)
+
+*Sri Lankan Substitutions:*
+- You can substitute peanuts with cashew nuts for variety.
+- Instead of herbal tea, you can try plain black tea.
+
+**Lunch:**
+- Red rice
+- Dhal curry
+- Polos curry (young jackfruit curry)
+- Leafy mallum
+- Plain curd
+
+*Sri Lankan Substitutions:*
+- You can replace polos curry with gotukola sambol for a different taste.
+- Instead of leafy mallum, try cabbage mallum for a change.
+
+**Snack:**
+- Guava
+- A handful of unsalted nuts
+
+**Dinner:**
+- Pittu
+- Green gram curry
+- Cucumber salad
+
+*Sri Lankan Substitutions:*
+- Instead of green gram curry, you can try lentil curry for variation.
+- For the cucumber salad, you can switch to carrot salad.
+
+Enjoy your delicious and balanced meals, Hansaja!
+
+```json
+{
+  "state": "ready",
+  "missing_fields": [],
+  "questions": [],
+  "quick_replies": {},
+  "meta": {}
+}
+```
+DEBUG CHAT RESULT: {'state': 'ready', 'response': 'Great! Here is your personalized diabetes-friendly meal plan for a full day:\n\n**Breakfast:**\n- Kurakkan (ragi) porridge with peanuts\n- Papaya\n- Herbal tea (no sugar)\n\n*Sri Lankan Substitutions:*\n- You can substitute peanuts with cashew nuts for variety.\n- Instead of herbal tea, you can try plain black tea.\n\n**Lunch:**\n- Red rice\n- Dhal curry\n- Polos curry (young jackfruit curry)\n- Leafy mallum\n- Plain curd\n\n*Sri Lankan Substitutions:*\n- You can replace polos curry with gotukola sambol for a different taste.\n- Instead of leafy mallum, try cabbage mallum for a change.\n\n**Snack:**\n- Guava\n- A handful of unsalted nuts\n\n**Dinner:**\n- Pittu\n- Green gram curry\n- Cucumber salad\n\n*Sri Lankan Substitutions:*\n- Instead of green gram curry, you can try lentil curry for variation.\n- For the cucumber salad, you can switch to carrot salad.\n\nEnjoy your delicious and balanced meals, Hansaja!', 'missing_fields': [], 'questions': [], 'quick_replies': {}, 'meta': {}}
